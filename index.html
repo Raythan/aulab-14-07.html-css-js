@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>aula 26-09</title>
+		<meta charset="UTF-8"/>
+		<link href="_css/style.css" type="text/css" rel="stylesheet"/>
+		<script type="text/javascript" src="_js/main.js"></script>
+	</head>
+	<body>
+		<header>Super Livros</header>
+		<nav>
+			<span><a href="#">Aventura</a><br/><br/></span>
+			<span><a href="#">Drama</a><br/><br/></span>
+			<span><a href="#">Romance</a><br/><br/></span>
+			<span><a href="#">Infantil</a><br/><br/></span>
+			<span><a href="#">Técnicos</a><br/><br/></span>
+		</nav>
+		<section>
+			<article>
+				<form method="GET" action="#">
+					 <fieldset><legend>Cadastro de Usuário</legend>
+					 	*EMail:<br/>
+					 	<input name="email" type="mail" required/><br/>
+
+					 	*Senha:<br/>
+					 	<input name="senha" id="inputErro" type="password" required/><br/>
+					 	<span id="spanErro" class="erroClass"></span>
+
+					 	*Confirme sua Senha:<br/>
+					 	<input name="senhaConf" id="inputErro1" type="password" required/><br/>
+
+					 	*Data de nascimento:<br/>
+					 	<input name="data" type="date" required/><br/><br/>
+
+					 	Sexo:<br/>
+					 	<input type="radio" name="sexo" value="masculino" checked/>Masculino 
+					 	<input type="radio" name="sexo" value="feminino"/>Feminino<br/><br/>
+					 	Telefone:<br/>
+					 	<input name="telefone" type="text"/>
+					 </fieldset><br/>
+					 <button class="botao" onclick="alertPassword()" type="submit"/>Cadastrar</button>
+				</form>
+			</article>
+		</section>
+		<footer>
+			Contato:<br/>
+			Email: vendas@superlivros.com.br
+		</footer>
+		
+	</body>
+</html>
