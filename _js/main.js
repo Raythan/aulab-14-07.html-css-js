@@ -11,11 +11,12 @@ function alertPassword(){
 			spanAlert.innerHTML = "A senha precisa ter 8 caracteres.<br/>";
 		}else{
 			spanAlert.innerHTML = "";
-		}
-		if(inputAlert1.length<8){
-			spanAlert1.innerHTML = "A senha precisa ter 8 caracteres.<br/>";
-		}else{
-			spanAlert1.innerHTML = "";
+			if(inputAlert1.length<8){
+				spanAlert1.innerHTML = "A senha precisa ter 8 caracteres.<br/>";
+			}else{
+				spanAlert1.innerHTML = "";
+				
+			}
 		}
 	}else{
 		spanAlert.innerHTML = "Esses números não são iguais.<br/>";
