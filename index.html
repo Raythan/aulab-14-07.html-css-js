@@ -23,11 +23,12 @@
 					 	<input name="email" type="mail" required/><br/>
 
 					 	*Senha:<br/>
-					 	<input name="senha" id="inputErro" type="password" required/><br/>
+					 	<input name="senha" id="inputErro" onChange="alertPassword()" type="password" required/><br/>
 					 	<span id="spanErro" class="erroClass"></span>
 
 					 	*Confirme sua Senha:<br/>
-					 	<input name="senhaConf" id="inputErro1" type="password" required/><br/>
+					 	<input name="senhaConf" id="inputErro1" onChange="alertPassword()" type="password" required/><br/>
+						<span id="spanErro1" class="erroClass"></span>
 
 					 	*Data de nascimento:<br/>
 					 	<input name="data" type="date" required/><br/><br/>
@@ -38,7 +39,7 @@
 					 	Telefone:<br/>
 					 	<input name="telefone" type="text"/>
 					 </fieldset><br/>
-					 <button class="botao" onclick="alertPassword()" type="submit"/>Cadastrar</button>
+					 <button class="botao" onsubmit="alertPassword()" type="submit"/>Cadastrar</button>
 				</form>
 			</article>
 		</section>
